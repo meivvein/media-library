@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{% address %}/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="{% address %}/static/styles/main.css">
+  <title>MyMediaLibrary</title>
+</head>
+<body>
+  
+  <header class="main-header">
+    <h1>MyMediaLibrary</h1>
+  </header>
+  
+  <div class="container">
+    <article>
+
+      <header class="cover">
+        <h1>MyMediaLibrary</h1>
+        <p>My favourite things to watch, read, play, and listen to.</p>
+      </header>
+
+      <nav class="navbar">
+        <ul>
+          <li id="list-nav-element">List</li>
+          <li id="add-nav-element">Add Entry</li>
+        </ul>
+      </nav>
+
+      <div class="block">
+        <main role="main">
+
+          <!-- List Page -->
+          <section id="list-page">
+            <table>
+              <caption>
+                All entries
+              </caption>
+              <thead>
+                <tr>
+                  <th class="number">#</th>
+                  <th class="image">Image</th>
+                  <th class="title">Title</th>
+                  <th class="author">Author</th>
+                  <th class="type">Type</th>
+                </tr>
+              </thead>
+              <tbody id="list-page-content"></tbody>
+            </table>
+          </section>
+          <!-- End List Page -->
+
+          <!-- Entry Page -->
+          <section id="entry-page">
+            <div class="flex">
+              <div>
+                <img class="image" src="" alt="" id="entry-page-img">
+              </div>
+              <div>
+                <h2 id="entry-page-title"></h2>
+                <header class="normal-header">
+                  Information
+                </header>
+                <ul>
+                  <li>
+                    <label for="entry-page-author">Author:</label>
+                    <span id="entry-page-author"></span>
+                  </li>
+                  <li>
+                    <label for="entry-page-type">Type:</label>
+                    <span id="entry-page-type"></span>
+                  </li>
+                  <li>
+                    <label for="entry-page-timestamp">Last edited:</label>
+                    <span id="entry-page-timestamp"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="entry-page-nav">
+              <button type="button" class="btn" id="entry-page-edit-btn">Edit</button>
+              <button type="button" class="btn" id="entry-page-delete-btn">Delete</button>
+            </nav>
+          </section>
+          <!-- End Entry Page -->
+
+          <!-- Edit Page -->
+          <section id="edit-page">
+            <div class="flex">
+              <div>
+                <img class="image" src="" alt="" id="edit-page-img">
+              </div>
+              <div>
+                <header class="normal-header">
+                  Edit Entry
+                </header>
+                <div class="input-group">
+                  <label for="edit-page-title">Title<span aria-label="required">*</span></label>
+                <input type="text" name="title" id="edit-page-title">
+                </div>
+                <div class="input-group">
+                  <label for="edit-page-author">Author<span aria-label="required">*</span></label>
+                <input type="text" name="author" id="edit-page-author">
+                </div>
+                <div class="input-group">
+                  <label for="edit-page-type">Type<span aria-label="required">*</span></label>
+                <input type="text" name="type" id="edit-page-type">
+                </div>
+                <div class="input-group">
+                  <label for="edit-page-img-url">Image URL</label>
+                <input type="url" name="image" id="edit-page-img-url">
+                </div>
+                <p class="note">* This field is required.</p>
+              </div>
+            </div>
+            <nav class="entry-page-nav">
+              <button type="button" class="btn" id="edit-page-save-btn">Save</button>
+              <button type="button" class="btn" id="edit-page-cancel-btn">Cancel</button>
+            </nav>
+          </section>
+          <!-- End Edit Page -->
+
+          <!-- New Page -->
+          <section id="new-page">
+            <div class="flex">
+              <div>
+                <img class="image" src="" alt="" id="new-page-img">
+              </div>
+              <div>
+                <header class="normal-header">
+                  Add New Entry
+                </header>
+                <div class="input-group">
+                  <label for="new-page-title">Title<span aria-label="required">*</span></label>
+                  <input type="text" name="title" id="new-page-title">
+                </div>
+                <div class="input-group">
+                  <label for="new-page-author">Author<span aria-label="required">*</span></label>
+                  <input type="text" name="author" id="new-page-author">
+                </div>
+                <div class="input-group">
+                  <label for="new-page-type">Type<span aria-label="required">*</span></label>
+                  <input type="text" name="type" id="new-page-type">
+                </div>
+                <div class="input-group">
+                  <label for="new-page-img-url">Image URL</label>
+                  <input type="url" name="image" id="new-page-img-url">
+                </div>
+                <p class="note">* This field is required.</p>
+              </div>
+            </div>
+            <nav class="entry-page-nav">
+              <button type="button" class="btn" id="new-page-save-btn">Save</button>
+              <button type="button" class="btn" id="new-page-cancel-btn">Cancel</button>
+            </nav>
+          </section>
+          <!-- End New Page -->
+
+        </main>
+      </div>
+
+    </article>
+  </div>
+  
+  <footer>
+    <p>meivvein 2023 | <a href="https://github.com/meivvein" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script src="{% address %}/static/js/main.js" type="module"></script>
+</body>
+</html>
