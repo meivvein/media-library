@@ -3,7 +3,6 @@ import { APIManager } from "./api.js";
 import { NavManager } from "./navigation.js";
 import { ListPage, EntryPage, EditPage, NewPage } from "./page.js";
 import { ContentManager, EntryManager } from "./content.js";
-// import { SearchManager } from "./search.js";
 
 const BATCH_SIZE = 10;
 
