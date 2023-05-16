@@ -114,9 +114,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.addEventListener('scroll', scrollEvent);
     listPage.addSelectEvent(scrollEvent);
 
-    // Search managment
-    // const searchManager = new SearchManager($('#search-form'), $('#search'), $('#search-list'), BATCH_SIZE);
-
     // Finish
     listPage.select();
 });
