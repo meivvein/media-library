@@ -64,6 +64,7 @@ a, a:visited, a:hover {
 .logo {
     width: var(--container-width);
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .baner {

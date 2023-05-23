@@ -99,6 +99,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         newPage.claer();
     });
 
+    $('#logo').addEventListener('click', () => {
+        listPage.select();
+    });
+
     // Content managment
     const entryOnClick = entry => {
         navManager.unsetActive();
