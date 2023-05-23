@@ -31,7 +31,7 @@ body::before {
 
 h1 {
     font-family: 'Ragtime-Demibold', sans-serif;
-    font-size: 2.4rem;
+    font-size: 2.45rem;
 }
 
 h2 {
@@ -55,17 +55,18 @@ a, a:visited, a:hover {
     flex-grow: 1;
 }
 
-.main-header, .cover {
+.logo, .baner {
     background: var(--color-primary);
     color: var(--color-secondary);
+    user-select: none;
 }
 
-.main-header {
+.logo {
     width: var(--container-width);
     margin: 0 auto;
 }
 
-.cover {
+.baner {
     height: 280px;
     margin: 1rem;
     margin-bottom: 0;
@@ -75,15 +76,15 @@ a, a:visited, a:hover {
     align-items: center;
 }
 
-.cover h1 {
+.baner h1 {
     font-size: 4.25rem;
 }
 
-.cover p {
+.baner p {
     font-size: 1.038rem;
 }
 
-.cover * {
+.baner * {
     margin: 0;
 }
 
